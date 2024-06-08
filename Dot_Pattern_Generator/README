@@ -1,0 +1,2 @@
+This folder contains the Dot pattern generator (can give the required hex values for printing a desired 5x8 dot pattern).    
+This was made in C# with windows form.  The application is very basic, but does what it needs to do.
