@@ -1,1 +1,0 @@
-This folder contains all files needed for I2C Communication.  It must be used with the Main test file.  The user must initalize the I2C drivers with the Init_I2C method.
