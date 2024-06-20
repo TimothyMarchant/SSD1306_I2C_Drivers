@@ -2,7 +2,6 @@
 void I2C_Start(unsigned char address,unsigned char numberofbytes,unsigned char firstbyte){
     //wait for bus to be free.
     while (!I2C1STAT0bits.BFRE);
-    //__delay_ms(250);
     //load the number of bytes to be transmitted.
     
     I2C1CNT=numberofbytes;
@@ -64,6 +63,10 @@ void I2C_Init(void){
     };
     I2C1PIR=0;
 }
+/* updateI2CCNT
+* This method updates the I2C1CNT register which is necessary if communication needs to be extended past 255 bytes of data.
+* the method returns void and takes in a unsigned char.  The unsigned char is first checked to make sure I2C1CNT does not overflow.
+*/
 void updateI2CCNT(unsigned char update){
     //do not update if this causes an overflow.
     if (I2C1CNT+update<I2C1CNT){
