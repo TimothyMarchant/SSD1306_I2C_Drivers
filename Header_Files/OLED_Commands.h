@@ -73,4 +73,4 @@ enum OLED_Commands{
 const unsigned char OLED_Init_Inst[OLED_Init_Inst_Length]={SetMultiplexComm,MaxMultiplexValue,DisplayOffSetComm,DisplayOffSetOFF,
     SetMinDisplayLine,SegmentRemap,RemapScanDir,SetCOMconfigComm,DefaultCOMconfig,SetConstrastComm,defaultconstrast,
     DisplayRAM,NoninvertDisplay,SetDisplayClockDivideComm,SetOscilDefault,TurnOnChargePumpComm1,TurnOnChargePumpComm2,DisplayON,
-    TurnOffScroll,SetMemoryForMode,SetHorzAddMode,SetColumnAddress,ColumnStartAdd,ColumnEndAdd,SetPageAddress,PageStartAdd,PageEndAdd,};
+    TurnOffScroll,SetMemoryForMode,SetHorzAddMode,SetColumnAddress,ColumnStartAdd,ColumnEndAdd,SetPageAddress,PageStartAdd,PageEndAdd};
